@@ -14,7 +14,9 @@ const Input = props => {
 				value={props.value}
 				required
 			/>
-			{props.error.length !== 0 && <p>{props.error}</p>}
+			{props.error.length !== 0 && (
+				<p className={classes['input__error']}>{props.error}</p>
+			)}
 		</div>
 	);
 };

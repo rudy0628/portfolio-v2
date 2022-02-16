@@ -5,6 +5,11 @@ import { FiFacebook, FiInstagram, FiGithub } from 'react-icons/fi';
 import { AiOutlineMail } from 'react-icons/ai';
 
 const Hero = () => {
+	const startToSeeClickHandler = () => {
+		const sectionAbout = document.querySelector('#section-about');
+		sectionAbout.scrollIntoView({ behavior: 'smooth' });
+	};
+
 	return (
 		<section className={classes['section-hero']}>
 			<div className={classes.hero}>
@@ -67,9 +72,9 @@ const Hero = () => {
 				</ScrollAnimation>
 				<ScrollAnimation animateIn="fadeIn" delay={1000} animateOnce>
 					<div className={classes['hero__btn-box']}>
-						<a href="#section-about" className="btn btn--full">
+						<button className="btn btn--full" onClick={startToSeeClickHandler}>
 							start to see &darr;
-						</a>
+						</button>
 					</div>
 				</ScrollAnimation>
 			</div>
