@@ -1,0 +1,26 @@
+.input {
+	label {
+		display: block;
+		font-size: 1.6rem;
+		margin-bottom: 1.2rem;
+		font-weight: 500;
+	}
+
+	input {
+		padding: 1.2rem;
+		width: 100%;
+		font-family: inherit;
+		font-size: 1.6rem;
+		border: none;
+		border-radius: 150px;
+
+		&::placeholder {
+			color: #aaa;
+		}
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 0 0.4rem rgba(206, 216, 254, 0.5);
+		}
+	}
+}

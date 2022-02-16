@@ -1,0 +1,14 @@
+.section-cta {
+	padding: 17.6rem 3.2rem 9.6rem;
+}
+
+.cta {
+	max-width: 120rem;
+	display: grid;
+	grid-template-columns: 55fr 45fr;
+	margin: 0 auto;
+	background: linear-gradient(to bottom, #374a96, #4a63c8);
+	overflow: hidden;
+	border-radius: 11px;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}

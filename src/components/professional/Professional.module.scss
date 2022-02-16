@@ -1,0 +1,45 @@
+.section-professional {
+	padding: 9.6rem 0;
+	background-color: #edf2ff;
+}
+
+.professional {
+	&__link {
+		&-box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&:link,
+		&:visited {
+			display: inline-block;
+			text-align: center;
+			margin-top: 4.8rem;
+			text-decoration: none;
+			font-size: 2rem;
+			font-weight: 700;
+			color: #3b5bdb;
+		}
+
+		&:link span,
+		&:visited span {
+			display: inline-block;
+		}
+
+		&:hover span,
+		&:active span {
+			animation: arrow-move 1s infinite;
+		}
+	}
+}
+
+@keyframes arrow-move {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(1rem);
+	}
+}

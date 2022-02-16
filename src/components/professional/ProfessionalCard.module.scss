@@ -1,0 +1,30 @@
+.professional {
+	&__card {
+		background-color: #fff;
+		padding: 4.8rem 2.4rem;
+		transition: all 0.3s;
+		text-align: center;
+
+		&:hover {
+			box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	&__icon {
+		margin-bottom: 3.2rem;
+		width: 5.2rem;
+		height: 5.2rem;
+		color: #3b5bdb;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 1.6rem;
+		margin-bottom: 2.4rem;
+	}
+
+	&__description {
+		line-height: 1.6;
+		font-size: 1.6rem;
+	}
+}
