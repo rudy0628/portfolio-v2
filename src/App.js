@@ -11,7 +11,7 @@ const App = () => {
 		<Fragment>
 			<MainHeader />
 			<Routes>
-				<Route path="/introduce" element={<IntroducePage />} />
+				<Route path="/" element={<IntroducePage />} />
 				<Route path="/project" element={<ProjectPage />} />
 				<Route path="/contact" element={<ContactPage />} />
 			</Routes>

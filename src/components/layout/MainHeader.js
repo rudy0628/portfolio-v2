@@ -11,7 +11,7 @@ const MainHeader = () => {
 				<ul className={classes['header__nav--list']}>
 					<li className={classes['header__nav--item']}>
 						<NavLink
-							to="/introduce"
+							to="/"
 							className={({ isActive }) =>
 								isActive
 									? `${classes['header__nav--link']} ${classes['header__nav--active']}`
