@@ -25,12 +25,7 @@ const Form = () => {
 		<div className={classes['cta__text-box']}>
 			<h2 className="heading__secondary">聯絡我</h2>
 			<p className={classes['cta__text']}>如果有問題，請填寫Email</p>
-			<form
-				className={classes['cta__form']}
-				name="contact"
-				method="post"
-				// onSubmit={submitHandler}
-			>
+			<form className={classes['cta__form']} name="contact" method="post">
 				<input type="hidden" name="form-name" value="contact" />
 				<Input
 					id="name"

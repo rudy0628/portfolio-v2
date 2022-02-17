@@ -4,7 +4,7 @@ import classes from './MainHeader.module.scss';
 const MainHeader = () => {
 	return (
 		<header className={classes.header}>
-			<NavLink to="/introduce" className={classes['header__logo']}>
+			<NavLink to="/" className={classes['header__logo']}>
 				Rudy's
 			</NavLink>
 			<nav className={classes.header__nav}>

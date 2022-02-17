@@ -11,3 +11,21 @@
 	margin: 0 auto;
 	max-width: 100rem;
 }
+
+.search {
+	max-width: 60rem;
+	margin: 0 auto;
+
+	& input {
+		font-size: 1.6rem;
+		padding: 1rem;
+		width: 100%;
+		border-radius: 150px;
+		margin-bottom: 2rem;
+		border: 3px solid #aaa;
+
+		&::placeholder {
+			color: #ccc;
+		}
+	}
+}

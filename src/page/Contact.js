@@ -1,7 +1,14 @@
+import { Fragment } from 'react';
 import Cta from '../components/cta/Cta';
+import Footer from '../components/footer/Footer';
 
 const ContactPage = () => {
-	return <Cta />;
+	return (
+		<Fragment>
+			<Cta />
+			<Footer />
+		</Fragment>
+	);
 };
 
 export default ContactPage;

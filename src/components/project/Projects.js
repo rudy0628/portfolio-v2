@@ -1,9 +1,26 @@
-import ProjectItem from './ProjectItem';
-import classes from './Projects.module.scss';
+import { useState } from 'react';
 import { projectContent } from '../../config/sectionContent';
+
+import ProjectItem from './ProjectItem';
 import BubbleBg from '../UI/bubbleBg/BubbleBg';
+import classes from './Projects.module.scss';
 
 const Project = () => {
+	const [filterProjectContent, setFilterProjectContent] =
+		useState(projectContent);
+
+	const searchChangeHandler = e => {
+		if (e.target.value.trim().length === 0) {
+			setFilterProjectContent(projectContent);
+		} else {
+			setFilterProjectContent(
+				projectContent.filter(project =>
+					project.title.toLowerCase().startsWith(e.target.value.toLowerCase())
+				)
+			);
+		}
+	};
+
 	return (
 		<section className={classes['section-project']} id="section-project">
 			<BubbleBg />
@@ -12,7 +29,14 @@ const Project = () => {
 				<h2 className="heading__secondary">作品集</h2>
 			</div>
 			<div className="container">
-				{projectContent.map(project => (
+				<div className={classes.search}>
+					<input
+						type="text"
+						placeholder="請輸入標題 ex.Shoppingsite、disney page clone..."
+						onChange={searchChangeHandler}
+					/>
+				</div>
+				{filterProjectContent.map(project => (
 					<ProjectItem
 						key={project.id}
 						title={project.title}
