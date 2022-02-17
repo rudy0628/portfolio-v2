@@ -10,31 +10,16 @@ const Form = () => {
 	const {
 		value: fullNameValue,
 		hasError: fullNameHasError,
-		isValid: fullNameIsValid,
 		valueChangeHandler: fullNameChangeHandler,
 		inputBlurHandler: fullNameBlurHandler,
-		reset: fullNameReset,
 	} = useInput(isNotEmpty);
 
 	const {
 		value: emailValue,
 		hasError: emailHasError,
-		isValid: emailIsValid,
 		valueChangeHandler: emailChangeHandler,
 		inputBlurHandler: emailBlurHandler,
-		reset: emailReset,
 	} = useInput(isEmail);
-
-	const formIsValid = fullNameIsValid && emailIsValid;
-
-	const submitHandler = e => {
-		e.preventDefault();
-
-		if (!formIsValid) return;
-
-		fullNameReset();
-		emailReset();
-	};
 
 	return (
 		<div className={classes['cta__text-box']}>
@@ -48,7 +33,7 @@ const Form = () => {
 			>
 				<input type="hidden" name="form-name" value="contact" />
 				<Input
-					id="fullName"
+					id="name"
 					type="text"
 					placeholder="王小名"
 					value={fullNameValue}
