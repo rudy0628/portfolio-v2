@@ -1,8 +1,8 @@
 import { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
-import Hero from '../components/hero/Hero';
-import About from '../components/about/About';
-import Professional from '../components/professional/Professional';
+import Hero from '../components/introduce/hero/Hero';
+import About from '../components/introduce/about/About';
+import Professional from '../components/introduce/professional/Professional';
 
 const IntroducePage = () => {
 	return (

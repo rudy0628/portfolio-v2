@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
-import Cta from '../components/cta/Cta';
-import Footer from '../components/footer/Footer';
+import Cta from '../components/contact/cta/Cta';
+import Footer from '../components/contact/footer/Footer';
 
 const ContactPage = () => {
 	return (

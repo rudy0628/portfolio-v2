@@ -1,6 +1,6 @@
-import useInput from '../../hooks/use-input';
+import useInput from '../../../hooks/use-input';
 
-import Input from '../UI/input/Input';
+import Input from '../../UI/input/Input';
 import classes from './Form.module.scss';
 
 const isNotEmpty = value => value.trim().length !== 0;

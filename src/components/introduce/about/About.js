@@ -1,11 +1,11 @@
 import { useContext } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { ThemeContext } from '../../store/theme-Context';
+import { ThemeContext } from '../../../store/theme-Context';
 
 import classes from './About.module.scss';
-import webpMe from '../../img/me.webp';
-import minMe from '../../img/me-min.jpg';
-import Section from '../UI/section/Section';
+import webpMe from '../../../img/me.webp';
+import minMe from '../../../img/me-min.jpg';
+import Section from '../../UI/section/Section';
 import {
 	IoPersonOutline,
 	IoSchoolOutline,

@@ -1,4 +1,4 @@
-import Card from '../UI/card/Card';
+import Card from '../../UI/card/Card';
 import classes from './ProfessionalCard.module.scss';
 import ScrollAnimation from 'react-animate-on-scroll';
 

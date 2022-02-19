@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { ThemeContext } from '../../store/theme-Context';
+import { ThemeContext } from '../../../store/theme-Context';
 
-import Section from '../UI/section/Section';
+import Section from '../../UI/section/Section';
 import ProfessionalCard from './ProfessionalCard';
-import { professionalContent } from '../../config/sectionContent';
+import { professionalContent } from '../../../config/sectionContent';
 import classes from './Professional.module.scss';
 
 const Professional = () => {
