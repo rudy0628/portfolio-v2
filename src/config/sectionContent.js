@@ -16,8 +16,6 @@ import {
 	IoLogoCss3,
 	IoLogoJavascript,
 	IoLogoNodejs,
-	IoLogoReact,
-	IoLogoGithub,
 } from 'react-icons/io5';
 
 import { SiMongodb } from 'react-icons/si';
