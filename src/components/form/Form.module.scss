@@ -23,3 +23,11 @@
 		font-weight: 500;
 	}
 }
+
+@media only screen and (max-width: 37.5em) {
+	.cta {
+		&__form {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}

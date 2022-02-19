@@ -1,5 +1,6 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import ScrollAnimation from 'react-animate-on-scroll';
+import { ThemeContext } from '../../store/theme-Context';
 
 import Section from '../UI/section/Section';
 import ProfessionalCard from './ProfessionalCard';
@@ -8,9 +9,13 @@ import classes from './Professional.module.scss';
 
 const Professional = () => {
 	let delay = -500;
+	const themeCtx = useContext(ThemeContext);
+	const style = themeCtx.isDark
+		? `${classes['section-professional']} ${classes.dark}`
+		: `${classes['section-professional']}`;
 
 	return (
-		<Section className={classes['section-professional']}>
+		<Section className={style}>
 			<div className="container">
 				<span className="subheading">What I do</span>
 				<h2 className="heading__secondary">我會什麼</h2>
@@ -29,18 +34,11 @@ const Professional = () => {
 					);
 				})}
 			</div>
-			<ScrollAnimation
-				animateIn="bounceInLeft"
-				animateOut="bounceOutRight"
-				delay={1000}
-				animateOnce
-			>
-				<div className={classes['professional__link-box']}>
-					<Link to="/project" className={classes['professional__link']}>
-						See My Project <span>&rarr;</span>
-					</Link>
-				</div>
-			</ScrollAnimation>
+			<div className={classes['professional__link-box']}>
+				<Link to="/project" className={classes['professional__link']}>
+					See My Project <span>&rarr;</span>
+				</Link>
+			</div>
 		</Section>
 	);
 };

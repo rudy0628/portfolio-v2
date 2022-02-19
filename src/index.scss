@@ -53,6 +53,18 @@ html {
 	overflow-x: hidden;
 }
 
+@media only screen and (max-width: 59em) {
+	html {
+		font-size: 56.25%;
+	}
+}
+
+@media only screen and (max-width: 31.25em) {
+	html {
+		font-size: 50%;
+	}
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
@@ -82,6 +94,18 @@ body {
 
 	&__3-cols {
 		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media only screen and (max-width: 53.125em) {
+	.grid {
+		&__2-cols {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		&__3-cols {
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
 }
 
@@ -333,6 +357,24 @@ body {
 	&--weather {
 		border: 3px solid #74b816;
 		color: #74b816;
+	}
+}
+
+@media only screen and (max-width: 31.25em) {
+	.pills {
+		&--fullstack,
+		&--RESTfulAPI,
+		&--ecommerce,
+		&--clone,
+		&--carousel,
+		&--game,
+		&--baseball,
+		&--todolist,
+		&--location,
+		&--weather {
+			display: inline-block;
+			margin-bottom: 1rem;
+		}
 	}
 }
 

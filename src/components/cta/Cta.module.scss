@@ -2,6 +2,10 @@
 	padding: 17.6rem 3.2rem 9.6rem;
 }
 
+.dark.section-cta {
+	background-color: #333;
+}
+
 .cta {
 	max-width: 120rem;
 	display: grid;
@@ -11,4 +15,10 @@
 	overflow: hidden;
 	border-radius: 11px;
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 53.125em) {
+	.cta {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }

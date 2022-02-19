@@ -95,3 +95,33 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 37.5em) {
+	.footer {
+		display: flex;
+		flex-direction: column;
+
+		&__logo {
+			display: block;
+			text-align: center;
+		}
+
+		&__link {
+			&-box {
+				text-align: center;
+			}
+		}
+
+		&__copyright {
+			margin-bottom: 2rem;
+			text-align: center;
+		}
+
+		&__description {
+			&-box {
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}

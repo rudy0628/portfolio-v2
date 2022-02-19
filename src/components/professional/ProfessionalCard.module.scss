@@ -28,3 +28,21 @@
 		font-size: 1.6rem;
 	}
 }
+
+@media only screen and (max-width: 53.125em) {
+	.professional {
+		&__card {
+			width: 70%;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media only screen and (max-width: 31.25em) {
+	.professional {
+		&__card {
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+}

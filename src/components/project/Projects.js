@@ -1,11 +1,14 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { projectContent } from '../../config/sectionContent';
+import { ThemeContext } from '../../store/theme-Context';
 
 import ProjectItem from './ProjectItem';
 import BubbleBg from '../UI/bubbleBg/BubbleBg';
 import classes from './Projects.module.scss';
 
 const Project = () => {
+	const themeCtx = useContext(ThemeContext);
+
 	const [filterProjectContent, setFilterProjectContent] =
 		useState(projectContent);
 
@@ -21,8 +24,12 @@ const Project = () => {
 		}
 	};
 
+	const style = themeCtx.isDark
+		? `${classes['section-project']} ${classes.dark}`
+		: `${classes['section-project']}`;
+
 	return (
-		<section className={classes['section-project']} id="section-project">
+		<section className={style} id="section-project">
 			<BubbleBg />
 			<div className="container">
 				<span className="subheading">Projects</span>

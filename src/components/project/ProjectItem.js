@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 import classes from './ProjectItem.module.scss';
 import { FiChevronDown } from 'react-icons/fi';

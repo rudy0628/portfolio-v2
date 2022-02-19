@@ -90,7 +90,7 @@ const Footer = () => {
 						>
 							github
 						</a>
-						，我會公開此APP的專案並提供下載!
+						，我會公開此APP的權限並提供下載!
 					</p>
 				</div>
 			</footer>

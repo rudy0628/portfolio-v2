@@ -5,6 +5,20 @@
 	padding: 9.6rem 0;
 }
 
+.dark {
+	z-index: -4;
+	background-color: #333;
+	h2 {
+		color: #fff;
+	}
+
+	.about {
+		&__text {
+			color: #fff;
+		}
+	}
+}
+
 .about {
 	&__img-box {
 		display: flex;
@@ -15,6 +29,7 @@
 		& img {
 			width: 80%;
 			border-radius: 9px;
+			z-index: 2;
 		}
 
 		& picture {
@@ -32,7 +47,7 @@
 			position: absolute;
 			transform: translate(-50%, -50%);
 			border-radius: 50%;
-			z-index: -2;
+			z-index: 1;
 		}
 
 		&::before {
@@ -76,5 +91,45 @@
 		background-color: #edf2ff;
 		padding: 1.2rem;
 		border-radius: 50%;
+	}
+}
+
+@media only screen and (max-width: 53.125em) {
+	.about {
+		&__img-box {
+			& img {
+				width: 70%;
+			}
+
+			&::before {
+				width: 90%;
+				padding-bottom: 90%;
+			}
+
+			&::after {
+				width: 80%;
+				padding-bottom: 80%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 31.25em) {
+	.about {
+		&__img-box {
+			& img {
+				width: 80%;
+			}
+
+			&::before {
+				width: 102%;
+				padding-bottom: 102%;
+			}
+
+			&::after {
+				width: 87%;
+				padding-bottom: 87%;
+			}
+		}
 	}
 }

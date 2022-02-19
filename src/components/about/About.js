@@ -1,4 +1,6 @@
+import { useContext } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { ThemeContext } from '../../store/theme-Context';
 
 import classes from './About.module.scss';
 import webpMe from '../../img/me.webp';
@@ -19,8 +21,11 @@ import {
 } from 'react-icons/io5';
 
 const About = () => {
+	const themeCtx = useContext(ThemeContext);
+	const style = themeCtx.isDark ? `${classes.dark}` : '';
+
 	return (
-		<Section id="section-about">
+		<Section className={style} id="section-about">
 			<div className="container">
 				<span className="subheading">about</span>
 				<h2 className="heading__secondary">自我介紹</h2>
