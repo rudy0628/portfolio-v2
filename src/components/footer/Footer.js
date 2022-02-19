@@ -90,7 +90,16 @@ const Footer = () => {
 						>
 							github
 						</a>
-						，我會公開此APP的權限並提供下載!
+						，我會公開此APP的權限並提供下載!查看
+						<a
+							href="https://rudy-portfolio.netlify.app/"
+							target="_blank"
+							rel="noreferrer"
+							className={classes['footer__description--link']}
+						>
+							上一版本
+						</a>
+						。
 					</p>
 				</div>
 			</footer>
