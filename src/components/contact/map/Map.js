@@ -1,53 +1,30 @@
-import { Component } from 'react';
-import GoogleMapReact from 'google-map-react';
+import { useState } from 'react';
+
 import classes from './Map.module.scss';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
+import 'leaflet-defaulticon-compatibility';
 
-class Map extends Component {
-	static defaultProps = {
-		center: {
-			lat: 22.725177903100818,
-			lng: 120.31427576790375,
-		},
-		zoom: 17,
-	};
-
-	constructor() {
-		super();
-
-		this.state = {
-			windowWidth: null,
-		};
-
-		window.addEventListener('resize', () => {
-			this.setState({ windowWidth: window.innerWidth });
-		});
-	}
-
-	componentDidMount() {
-		// send Http request
-		this.setState({ windowWidth: window.innerWidth });
-	}
-
-	render() {
-		return (
-			// Important! Always set the container height explicitly
-			<div
-				style={{
-					height: `${this.state.windowWidth <= 850 ? '35vh' : '100%'}`,
-					width: '100%',
-				}}
-				className={classes.map}
+const Map = () => {
+	return (
+		<MapContainer
+			center={[22.72521748685251, 120.313546207096]}
+			zoom={17}
+			className={classes.map}
+		>
+			<TileLayer
+				attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+				url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+			/>
+			<Marker
+				position={[22.72521748685251, 120.313546207096]}
+				draggable={true}
+				animate={true}
 			>
-				<GoogleMapReact
-					bootstrapURLKeys={{
-						key: process.env.GOOGLE_MAP_KEY,
-					}}
-					defaultCenter={this.props.center}
-					defaultZoom={this.props.zoom}
-				></GoogleMapReact>
-			</div>
-		);
-	}
-}
-
+				<Popup>我的學校</Popup>
+			</Marker>
+		</MapContainer>
+	);
+};
 export default Map;

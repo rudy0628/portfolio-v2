@@ -16,7 +16,9 @@ const Cta = () => {
 		<section className={style} id="section-cta">
 			<div className={classes.cta}>
 				<Form />
-				<Map />
+				<div>
+					<Map />
+				</div>
 			</div>
 		</section>
 	);
