@@ -1,7 +1,6 @@
 import { useState, useContext } from 'react';
 import { projectContent } from '../../config/sectionContent';
 import { ThemeContext } from '../../store/theme-Context';
-import { TransitionGroup } from 'react-transition-group';
 
 import ProjectItem from './ProjectItem';
 import BubbleBg from '../UI/bubbleBg/BubbleBg';
@@ -44,7 +43,7 @@ const Project = () => {
 						onChange={searchChangeHandler}
 					/>
 				</div>
-				<TransitionGroup className="grid grid__2-cols">
+				<div className="grid grid__2-cols">
 					{filterProjectContent.map(project => (
 						<ProjectItem
 							key={project.id}
@@ -60,7 +59,7 @@ const Project = () => {
 							tag={project.tag}
 						/>
 					))}
-				</TransitionGroup>
+				</div>
 			</div>
 		</section>
 	);
