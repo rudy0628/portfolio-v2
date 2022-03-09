@@ -10,7 +10,6 @@ import classes from './MainHeader.module.scss';
 const MainHeader = () => {
 	const themeCtx = useContext(ThemeContext);
 	const [isToggle, setIsToggle] = useState(false);
-	console.log(themeCtx.isDark);
 
 	let style;
 	if (isToggle && themeCtx.isDark) {

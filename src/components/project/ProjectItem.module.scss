@@ -1,11 +1,13 @@
 .project {
-	transition: all 0.5s ease-in-out;
-	border-radius: 1.1rem;
-	max-width: 60rem;
-	margin: 0 auto 3.2rem;
-	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+	&__box {
+		transition: all 0.5s ease-in-out;
+		border-radius: 1.1rem;
+		max-width: 60rem;
+		margin: 0 auto 3.2rem;
+		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 
-	overflow: hidden;
+		overflow: hidden;
+	}
 
 	&__img-box {
 		& img {

@@ -90,6 +90,7 @@ body {
 
 	&__2-cols {
 		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
 	}
 
 	&__3-cols {
