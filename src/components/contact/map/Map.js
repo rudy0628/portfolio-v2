@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import classes from './Map.module.scss';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';

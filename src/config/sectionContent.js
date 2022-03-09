@@ -8,6 +8,12 @@ import todoListMinPic from '../img/project/todolist-map-min.png';
 import todoListWebPic from '../img/project/todolist-map.webp';
 import weatherMinPic from '../img/project/weather-min.png';
 import weatherWebPic from '../img/project/weather.webp';
+import airtshopMinPic from '../img/project/airtshop-min.png';
+import airtshopWebPic from '../img/project/airtshop.webp';
+import youtubePageCloneMinPic from '../img/project/youtube-page-clone-min.png';
+import youtubePageCloneWebPic from '../img/project/youtube-page-clone.webp';
+import reactTodoListMinPic from '../img/project/todolist-react-min.png';
+import reactTodoListWebPic from '../img/project/todolist-react.webp';
 
 import { FiChrome, FiLayers, FiSmartphone } from 'react-icons/fi';
 
@@ -17,10 +23,8 @@ import {
 	IoLogoJavascript,
 	IoLogoNodejs,
 } from 'react-icons/io5';
-
 import { SiMongodb } from 'react-icons/si';
-
-import { FaBootstrap } from 'react-icons/fa';
+import { FaBootstrap, FaReact, FaSass } from 'react-icons/fa';
 
 export const projectContent = [
 	{
@@ -99,6 +103,52 @@ export const projectContent = [
 		projectMinPic: weatherMinPic,
 		tag: ['weather'],
 	},
+	{
+		id: 'p6',
+		title: 'airtshop',
+		description:
+			'使用React、Redux開發機票訂購網站，擁有會員系統，可使用google及facebook登入',
+		skills: [
+			<FaReact className={'tools__icon--react'} />,
+			<FaSass className={'tools__icon--sass'} />,
+			<IoLogoJavascript className={'tools__icon--js'} />,
+		],
+		site: 'https://airtshop.netlify.app',
+		github: 'https://github.com/rudy0628/airtshop',
+		projectWebPic: airtshopMinPic,
+		projectMinPic: airtshopWebPic,
+		tag: ['airplane', 'user'],
+	},
+	{
+		id: 'p7',
+		title: 'Youtube Landing Page Clone',
+		description: '使用Sass複製Youtube首頁，有RWD設計',
+		skills: [
+			<IoLogoHtml5 className={'tools__icon--html'} />,
+			<FaSass className={'tools__icon--sass'} />,
+			<IoLogoJavascript className={'tools__icon--js'} />,
+		],
+		site: 'https://youtube-page-clone.netlify.app/',
+		github: 'https://github.com/rudy0628/youtube_clone',
+		projectWebPic: youtubePageCloneMinPic,
+		projectMinPic: youtubePageCloneWebPic,
+		tag: ['clone', 'youtube'],
+	},
+	{
+		id: 'p8',
+		title: 'React version todolist',
+		description: '使用React製作todolist，使用Firebase作為會員系統',
+		skills: [
+			<FaReact className={'tools__icon--react'} />,
+			<IoLogoCss3 className={'tools__icon--css'} />,
+			<IoLogoJavascript className={'tools__icon--js'} />,
+		],
+		site: 'https://youtube-page-clone.netlify.app/',
+		github: 'https://github.com/rudy0628/youtube_clone',
+		projectWebPic: reactTodoListMinPic,
+		projectMinPic: reactTodoListWebPic,
+		tag: ['todolist', 'user'],
+	},
 ];
 
 export const professionalContent = [
@@ -120,7 +170,7 @@ export const professionalContent = [
 		id: 'pro3',
 		title: 'MOBILE APP DEV',
 		description:
-			'曾經使用過Android studio進行App開發，於大學系上比賽中獲取行動應用組第二名成績，曾經開發過AI類型APP',
+			'曾經使用過Android studio進行App開發，於大學系上比賽中獲取行動應用組第二名成績，有開發過AI類型APP的經驗',
 		icon: FiSmartphone,
 	},
 ];

@@ -74,7 +74,9 @@ const ProjectItem = props => {
 						<p className={classes['project__description']}>
 							{props.description}
 						</p>
-						<p className={classes['project__tools']}>工具：{props.skills}</p>
+						<p className={classes['project__tools']}>
+							開發工具：{props.skills}
+						</p>
 					</div>
 				</CSSTransition>
 			</div>

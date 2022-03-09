@@ -251,7 +251,8 @@ body {
 	&--react,
 	&--github,
 	&--mongodb,
-	&--bootstrap {
+	&--bootstrap,
+	&--sass {
 		width: 3.2rem;
 		height: 3.2rem;
 		margin-right: 1.2rem;
@@ -288,6 +289,10 @@ body {
 	&--bootstrap {
 		color: #511378;
 	}
+
+	&--sass {
+		color: #cc6699;
+	}
 }
 
 .pills {
@@ -300,7 +305,10 @@ body {
 	&--baseball,
 	&--todolist,
 	&--location,
-	&--weather {
+	&--weather,
+	&--airplane,
+	&--user,
+	&--youtube {
 		padding: 0.3rem 0.6rem;
 		border-radius: 150px;
 		letter-spacing: 1.5px;
@@ -309,12 +317,15 @@ body {
 		margin-right: 0.6rem;
 	}
 
-	&--fullstack {
+	&--fullstack,
+	&--airplane,
+	&--youtube {
 		border: 3px solid #f03e3e;
 		color: #f03e3e;
 	}
 
-	&--RESTfulAPI {
+	&--RESTfulAPI,
+	&--user {
 		border: 3px solid #d6336c;
 		color: #d6336c;
 	}
@@ -371,7 +382,9 @@ body {
 		&--baseball,
 		&--todolist,
 		&--location,
-		&--weather {
+		&--weather,
+		&--airplane,
+		&--user {
 			display: inline-block;
 			margin-bottom: 1rem;
 		}
