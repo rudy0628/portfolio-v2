@@ -170,7 +170,7 @@ export const professionalContent = [
 		id: 'pro3',
 		title: 'MOBILE APP DEV',
 		description:
-			'曾經使用過Android studio進行App開發，於大學系上比賽中獲取行動應用組第二名成績，有開發過AI類型APP的經驗',
+			'曾經使用過Android studio進行App開發，於系上比賽中獲取行動應用組第二名成績，有開發過AI類型APP的經驗',
 		icon: FiSmartphone,
 	},
 ];
