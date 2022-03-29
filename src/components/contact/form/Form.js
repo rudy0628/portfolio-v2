@@ -29,6 +29,7 @@ const Form = () => {
 				<input type="hidden" name="form-name" value="contact" />
 				<Input
 					id="name"
+					title="姓名"
 					type="text"
 					placeholder="王小名"
 					value={fullNameValue}
@@ -39,6 +40,7 @@ const Form = () => {
 				<Input
 					id="email"
 					type="email"
+					title="信箱"
 					placeholder="rudy@example.com"
 					value={emailValue}
 					error={emailHasError ? 'Invalid Email' : ''}
