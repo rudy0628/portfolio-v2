@@ -31,14 +31,16 @@ const ProjectItem = props => {
 					>
 						<BsLink45Deg className={classes['project__icon--site']} />
 					</a>
-					<a
-						href={props.github}
-						className={classes['project__link']}
-						target="_blank"
-						rel="noreferrer"
-					>
-						<BsGithub className={classes['project__icon--site']} />
-					</a>
+					{props.github && (
+						<a
+							href={props.github}
+							className={classes['project__link']}
+							target="_blank"
+							rel="noreferrer"
+						>
+							<BsGithub className={classes['project__icon--site']} />
+						</a>
+					)}
 					<button
 						onClick={toggleTextBoxHandler}
 						className={classes['project__link--toggle']}

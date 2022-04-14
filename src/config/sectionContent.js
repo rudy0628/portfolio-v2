@@ -1,9 +1,5 @@
 import shoppingSiteMinPic from '../img/project/shoppingsite-min.png';
 import shoppingSiteWebPic from '../img/project/shoppingsite.webp';
-import disneySiteMinPic from '../img/project/disneypage-clone-min.png';
-import disneySiteWebPic from '../img/project/disneypage-clone.webp';
-import luckybaseMinPic from '../img/project/luckybase-min.png';
-import luckybaseWebPic from '../img/project/luckybase.webp';
 import todoListMinPic from '../img/project/todolist-map-min.png';
 import todoListWebPic from '../img/project/todolist-map.webp';
 import weatherMinPic from '../img/project/weather-min.png';
@@ -12,8 +8,8 @@ import airtshopMinPic from '../img/project/airtshop-min.png';
 import airtshopWebPic from '../img/project/airtshop.webp';
 import youtubePageCloneMinPic from '../img/project/youtube-page-clone-min.png';
 import youtubePageCloneWebPic from '../img/project/youtube-page-clone.webp';
-import reactTodoListMinPic from '../img/project/todolist-react-min.png';
-import reactTodoListWebPic from '../img/project/todolist-react.webp';
+import youtubeNoteMinPic from '../img/project/youtube-note-extension-min.png';
+import youtubeNoteWebPic from '../img/project/youtube-note-extension.webp';
 
 import { FiChrome, FiLayers, FiSmartphone } from 'react-icons/fi';
 
@@ -45,35 +41,6 @@ export const projectContent = [
 	},
 	{
 		id: 'p2',
-		title: 'disney page clone',
-		description: '迪士尼網站複製',
-		skills: [
-			<IoLogoHtml5 className={'tools__icon--html'} />,
-			<IoLogoCss3 className={'tools__icon--css'} />,
-		],
-		site: 'https://taiwan-disney-page-clone.netlify.app/',
-		github: 'https://github.com/rudy0628/taiwan-disney-landing-page-clone',
-		projectWebPic: disneySiteWebPic,
-		projectMinPic: disneySiteMinPic,
-		tag: ['clone', 'carousel'],
-	},
-	{
-		id: 'p3',
-		title: 'luckybase',
-		description: '自製隨機結果棒球小遊戲，可以顯示壘包及目前得分，有對戰機制',
-		skills: [
-			<IoLogoHtml5 className={'tools__icon--html'} />,
-			<IoLogoCss3 className={'tools__icon--css'} />,
-			<IoLogoJavascript className={'tools__icon--js'} />,
-		],
-		site: 'https://luckybase-rudy.netlify.app/',
-		github: 'https://github.com/rudy0628/luckybase',
-		projectWebPic: luckybaseWebPic,
-		projectMinPic: luckybaseMinPic,
-		tag: ['game', 'baseball'],
-	},
-	{
-		id: 'p4',
 		title: 'todolist-map',
 		description:
 			'傳統 todolist，結合 leaflet 開源地圖，以及 open weather 顯示天氣，使用parcel打包',
@@ -89,7 +56,7 @@ export const projectContent = [
 		tag: ['todolist', 'location'],
 	},
 	{
-		id: 'p5',
+		id: 'p3',
 		title: 'real-time taiwan weather',
 		description: '小型氣象查詢系統，可以查詢台灣各城市即時天氣資訊',
 		skills: [
@@ -104,7 +71,7 @@ export const projectContent = [
 		tag: ['weather'],
 	},
 	{
-		id: 'p6',
+		id: 'p4',
 		title: 'airtshop',
 		description:
 			'使用React、Redux開發機票訂購網站，擁有會員系統，可使用google及facebook登入',
@@ -120,7 +87,7 @@ export const projectContent = [
 		tag: ['airplane', 'user'],
 	},
 	{
-		id: 'p7',
+		id: 'p5',
 		title: 'Youtube Landing Page Clone',
 		description: '使用Sass複製Youtube首頁，有RWD設計',
 		skills: [
@@ -135,19 +102,18 @@ export const projectContent = [
 		tag: ['clone', 'youtube'],
 	},
 	{
-		id: 'p8',
-		title: 'React version todolist',
-		description: '使用React製作todolist，使用Firebase作為會員系統',
+		id: 'p5',
+		title: 'Youtube-note-extension',
+		description:
+			'使用React搭配Bootstrap開發chrome外掛元件，可在Youtube時間軸上使用文字筆記',
 		skills: [
 			<FaReact className={'tools__icon--react'} />,
-			<IoLogoCss3 className={'tools__icon--css'} />,
-			<IoLogoJavascript className={'tools__icon--js'} />,
+			<FaBootstrap className={'tools__icon--bootstrap'} />,
 		],
-		site: 'https://youtube-page-clone.netlify.app/',
-		github: 'https://github.com/rudy0628/youtube_clone',
-		projectWebPic: reactTodoListMinPic,
-		projectMinPic: reactTodoListWebPic,
-		tag: ['todolist', 'user'],
+		site: 'https://chrome.google.com/webstore/detail/youtube-note-extension/ophgbipjpfgllhhcehdnfldjfgcggmnp',
+		projectWebPic: youtubeNoteMinPic,
+		projectMinPic: youtubeNoteWebPic,
+		tag: ['chrome', 'youtube'],
 	},
 ];
 

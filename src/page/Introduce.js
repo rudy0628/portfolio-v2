@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import Hero from '../components/introduce/hero/Hero';
 import About from '../components/introduce/about/About';
 import Professional from '../components/introduce/professional/Professional';
+import TimeLine from '../components/introduce/timeline/Timeline';
 
 const IntroducePage = () => {
 	return (
@@ -17,6 +18,7 @@ const IntroducePage = () => {
 			<Hero />
 			<About />
 			<Professional />
+			<TimeLine />
 		</Fragment>
 	);
 };

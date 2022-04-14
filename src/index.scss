@@ -309,7 +309,8 @@ body {
 	&--weather,
 	&--airplane,
 	&--user,
-	&--youtube {
+	&--youtube,
+	&--chrome {
 		padding: 0.3rem 0.6rem;
 		border-radius: 150px;
 		letter-spacing: 1.5px;
@@ -331,7 +332,8 @@ body {
 		color: #d6336c;
 	}
 
-	&--ecommerce {
+	&--ecommerce,
+	&--chrome {
 		border: 3px solid #ae3ec9;
 		color: #ae3ec9;
 	}
