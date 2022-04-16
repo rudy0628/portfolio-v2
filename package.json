@@ -24,6 +24,7 @@
     "react-transition-group": "^4.4.2",
     "react-vertical-timeline-component": "^3.5.2",
     "sass": "^1.49.7",
+    "swiper": "^7.4.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

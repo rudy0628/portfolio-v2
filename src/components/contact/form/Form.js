@@ -31,7 +31,7 @@ const Form = () => {
 					id="name"
 					title="姓名"
 					type="text"
-					placeholder="王小名"
+					placeholder="請輸入姓名或暱稱"
 					value={fullNameValue}
 					error={fullNameHasError ? 'Invalid FullName' : ''}
 					onBlur={fullNameBlurHandler}
@@ -41,7 +41,7 @@ const Form = () => {
 					id="email"
 					type="email"
 					title="信箱"
-					placeholder="rudy@example.com"
+					placeholder="example@example.com"
 					value={emailValue}
 					error={emailHasError ? 'Invalid Email' : ''}
 					onBlur={emailBlurHandler}

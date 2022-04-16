@@ -73,7 +73,7 @@ const Hero = () => {
 				<ScrollAnimation animateIn="fadeIn" delay={1000} animateOnce>
 					<div className={classes['hero__btn-box']}>
 						<button className="btn btn--full" onClick={startToSeeClickHandler}>
-							start to see &darr;
+							START TO SEE
 						</button>
 					</div>
 				</ScrollAnimation>

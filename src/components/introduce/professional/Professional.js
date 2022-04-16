@@ -17,7 +17,7 @@ const Professional = () => {
 	return (
 		<Section className={style}>
 			<div className="container">
-				<span className="subheading">What I do</span>
+				<span className="subheading">skills</span>
 				<h2 className="heading__secondary">我會什麼</h2>
 			</div>
 			<div className="container grid grid__3-cols">
@@ -36,7 +36,7 @@ const Professional = () => {
 			</div>
 			<div className={classes['professional__link-box']}>
 				<Link to="/project" className={classes['professional__link']}>
-					See My Project <span>&rarr;</span>
+					See My Project
 				</Link>
 			</div>
 		</Section>

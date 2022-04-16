@@ -1,30 +1,29 @@
 import { useContext } from 'react';
 
-import Switch from '@mui/material/Switch';
-import FormControlLabel from '@mui/material/FormControlLabel';
 import { ThemeContext } from '../../../store/theme-Context';
+import { BsFillSunFill } from 'react-icons/bs';
+import { MdNightlight } from 'react-icons/md';
 import classes from './DayNightBtn.module.scss';
 
 const DayNightBtn = props => {
 	const themeCtx = useContext(ThemeContext);
-
-	const changeThemeHandler = () => {
-		themeCtx.setThemeHandler();
-		props.onToggle();
-	};
-
-	const style = themeCtx.isDark
-		? `${classes['day-night']} ${classes.dark}`
-		: `${classes['day-night']}`;
+	const containerClassName = themeCtx.isDark
+		? `${classes['night']}`
+		: `${classes['day']}`;
 
 	return (
-		<div>
-			<FormControlLabel
-				control={<Switch defaultValue={themeCtx.isDark} />}
-				className={style}
-				label={`${themeCtx.isDark ? 'Night' : 'Day'}`}
-				onClick={changeThemeHandler}
-			/>
+		<div className={containerClassName}>
+			<button
+				onClick={themeCtx.setThemeHandler}
+				className={classes['dayNight__btn']}
+			>
+				{themeCtx.isDark && (
+					<BsFillSunFill className={classes['dayNight__icon']} />
+				)}
+				{!themeCtx.isDark && (
+					<MdNightlight className={classes['dayNight__icon']} />
+				)}
+			</button>
 		</div>
 	);
 };

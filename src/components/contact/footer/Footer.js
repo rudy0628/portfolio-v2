@@ -61,7 +61,8 @@ const Footer = () => {
 							rel="noreferrer"
 							className={classes['footer__description--link']}
 						>
-							React
+							{' '}
+							React{' '}
 						</a>
 						製作，搭配
 						<a
@@ -70,33 +71,36 @@ const Footer = () => {
 							rel="noreferrer"
 							className={classes['footer__description--link']}
 						>
-							React Router Dom
+							{' '}
+							React Router Dom{' '}
 						</a>
-						實現SPA頁面，如果有需要此網站原始碼，請連絡我的
+						實現 SPA 頁面，如果有需要此網站原始碼，請連絡我的
 						<a
 							href="https://www.instagram.com/ya.0628/"
 							target="_blank"
 							rel="noreferrer"
 							className={classes['footer__description--link']}
 						>
+							{' '}
 							Instagram
-						</a>
-						或
+						</a>{' '}
+						或{' '}
 						<a
 							href="https://github.com/rudy0628"
 							target="_blank"
 							rel="noreferrer"
 							className={classes['footer__description--link']}
 						>
-							github
+							github{' '}
 						</a>
-						，我會公開此APP的權限並提供下載!查看
+						，我會公開此 APP 的權限並提供下載!查看
 						<a
 							href="https://rudy-portfolio.netlify.app/"
 							target="_blank"
 							rel="noreferrer"
 							className={classes['footer__description--link']}
 						>
+							{' '}
 							上一版本
 						</a>
 						。

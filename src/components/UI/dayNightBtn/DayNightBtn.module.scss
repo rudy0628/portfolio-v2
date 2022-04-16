@@ -1,7 +1,59 @@
-.day-night span {
-	font-size: 1.6rem;
+.dayNight {
+	&__btn {
+		position: fixed;
+		top: 15rem;
+		right: 7.5rem;
+		z-index: 998;
+		border: none;
+		background-color: #fff;
+		border-radius: 50%;
+		height: 4rem;
+		width: 4rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: all 0.3s;
+		box-shadow: 0 1rem 3rem rgba(#000, 0.2);
+
+		@media only screen and (max-width: 56.25em) {
+			top: 14rem;
+			right: 5.5rem;
+		}
+
+		@media only screen and (max-width: 37.5em) {
+			top: 13rem;
+			right: 4.5rem;
+		}
+
+		&:hover {
+			background-color: #333;
+			color: #fff;
+		}
+	}
+
+	&__icon {
+		width: 2.4rem;
+		height: 2.4rem;
+	}
 }
 
-.dark.day-night span {
-	color: #fff;
+.night {
+	.dayNight {
+		&__btn {
+			background-color: #fff;
+
+			&:hover {
+				background-color: #ffd43b;
+			}
+		}
+
+		&__icon {
+			color: #ffd43b;
+		}
+
+		&__btn:hover .dayNight__icon {
+			color: white;
+		}
+	}
 }

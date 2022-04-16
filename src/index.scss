@@ -59,12 +59,6 @@ html {
 	}
 }
 
-@media only screen and (max-width: 31.25em) {
-	html {
-		font-size: 50%;
-	}
-}
-
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
@@ -156,10 +150,11 @@ body {
 	display: inline-block;
 	text-decoration: none;
 	font-size: 2rem;
-	font-weight: 600;
+	letter-spacing: 1.5px;
 	padding: 1.6rem 3.2rem;
 	border-radius: 150px;
 	transition: all 0.3s;
+	position: relative;
 
 	&:link,
 	&:visited {
@@ -169,23 +164,50 @@ body {
 		font-weight: 600;
 		padding: 1.6rem 3.2rem;
 		border-radius: 150px;
-
 		transition: all 0.3s;
 	}
 
 	&--full {
-		background-color: #3b5bdb;
-		color: #fff;
+		background-color: #fff;
+		color: #3b5bdb;
+		position: relative;
+
 		&:link,
 		&:visited {
-			background-color: #3b5bdb;
-			color: #fff;
+			background-color: #fff;
+			color: #3b5bdb;
 		}
 
-		&:hover,
-		&:active {
-			background-color: transparent;
-			box-shadow: inset 0 0 0 3px #3b5bdb;
+		&:hover {
+			transform: translateY(-0.3rem);
+			box-shadow: 0 1rem 2rem rgba(#333, 0.2);
+
+			&::after {
+				transform: scaleX(1.4) scaleY(1.6);
+				opacity: 0;
+			}
+		}
+
+		&:active,
+		&:focus {
+			outline: none;
+			transform: translateY(-0.1rem);
+			box-shadow: 0 0.5rem 1rem rgba(#333, 0.2);
+		}
+
+		&::after {
+			content: '';
+			background-color: #fff;
+			display: inline-block;
+			height: 100%;
+			width: 100%;
+			border-radius: 15rem;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+
+			transition: all 0.4s ease-out;
 		}
 	}
 
@@ -245,152 +267,60 @@ body {
 }
 
 .tools__icon {
-	&--html,
-	&--css,
-	&--js,
-	&--nodejs,
-	&--react,
-	&--github,
-	&--mongodb,
-	&--bootstrap,
-	&--sass {
-		width: 3.2rem;
-		height: 3.2rem;
+	&-timeline {
+		display: inline-block;
 		margin-right: 1.2rem;
+		margin-bottom: 1.2rem;
+		background-color: #fff;
+		padding: 0.6rem 1.2rem;
+		border-radius: 150px;
+		letter-spacing: 1.2px;
+		font-size: 1.4rem;
+		font-weight: 700;
 	}
 
-	&--html {
+	&--HTML {
 		color: #e34f26;
 	}
 
-	&--css {
+	&--CSS {
 		color: #002561;
 	}
 
-	&--js {
+	&--JavaScript {
 		color: #f7df1e;
 	}
 
-	&--nodejs {
+	&--NodeJs {
 		color: #6cc24a;
 	}
 
-	&--react {
+	&--React {
 		color: #00d8ff;
 	}
 
-	&--github {
+	&--GitHub {
 		color: #6e5494;
 	}
 
-	&--mongodb {
+	&--MongoDB {
 		color: #589636;
 	}
 
-	&--bootstrap {
+	&--Bootstrap {
 		color: #511378;
 	}
 
-	&--sass {
+	&--Sass {
 		color: #cc6699;
 	}
-}
 
-.pills {
-	&--fullstack,
-	&--RESTfulAPI,
-	&--ecommerce,
-	&--clone,
-	&--carousel,
-	&--game,
-	&--baseball,
-	&--todolist,
-	&--location,
-	&--weather,
-	&--airplane,
-	&--user,
-	&--youtube,
-	&--chrome {
-		padding: 0.3rem 0.6rem;
-		border-radius: 150px;
-		letter-spacing: 1.5px;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin-right: 0.6rem;
+	&--PHP {
+		color: #8892be;
 	}
 
-	&--fullstack,
-	&--airplane,
-	&--youtube {
-		border: 3px solid #f03e3e;
-		color: #f03e3e;
-	}
-
-	&--RESTfulAPI,
-	&--user {
-		border: 3px solid #d6336c;
-		color: #d6336c;
-	}
-
-	&--ecommerce,
-	&--chrome {
-		border: 3px solid #ae3ec9;
-		color: #ae3ec9;
-	}
-
-	&--clone {
-		border: 3px solid #7048e8;
-		color: #7048e8;
-	}
-
-	&--carousel {
-		border: 3px solid #4263eb;
-		color: #4263eb;
-	}
-
-	&--game {
-		border: 3px solid #1c7ed6;
-		color: #1c7ed6;
-	}
-
-	&--baseball {
-		border: 3px solid #1098ad;
-		color: #1098ad;
-	}
-
-	&--todolist {
-		border: 3px solid #0ca678;
-		color: #0ca678;
-	}
-
-	&--location {
-		border: 3px solid #37b24d;
-		color: #37b24d;
-	}
-
-	&--weather {
-		border: 3px solid #74b816;
-		color: #74b816;
-	}
-}
-
-@media only screen and (max-width: 31.25em) {
-	.pills {
-		&--fullstack,
-		&--RESTfulAPI,
-		&--ecommerce,
-		&--clone,
-		&--carousel,
-		&--game,
-		&--baseball,
-		&--todolist,
-		&--location,
-		&--weather,
-		&--airplane,
-		&--user {
-			display: inline-block;
-			margin-bottom: 1rem;
-		}
+	&--Android {
+		color: #a4c639;
 	}
 }
 
@@ -419,5 +349,36 @@ body {
 
 	100% {
 		opacity: 0;
+	}
+}
+
+// swiper
+.swiper {
+	width: 80vw;
+	height: 40rem;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	@media only screen and (max-width: 40.625em) {
+		width: 90vw;
+	}
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+
+	overflow: hidden;
+
+	&__custom {
+		width: 40vw !important;
+
+		@media only screen and (max-width: 40.625em) {
+			width: 50vw !important;
+		}
+
+		@media only screen and (max-width: 28.125em) {
+			width: 60vw !important;
+		}
 	}
 }

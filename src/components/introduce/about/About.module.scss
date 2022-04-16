@@ -6,7 +6,7 @@
 }
 
 .dark {
-	z-index: -4;
+	z-index: -8;
 	background-color: #333;
 	h2 {
 		color: #fff;
@@ -16,120 +16,162 @@
 		&__text {
 			color: #fff;
 		}
+
+		&__text {
+			&-title {
+				color: #fff;
+			}
+		}
 	}
 }
 
 .about {
+	display: flex;
+
+	@media only screen and (max-width: 62.5em) {
+		flex-direction: column;
+	}
+
 	&__img-box {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		position: relative;
+		transition: all 0.3s;
+		width: 50%;
+
+		@media only screen and (max-width: 62.5em) {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-item: center;
+			margin-bottom: 4.6rem;
+		}
 
 		& img {
-			width: 80%;
-			border-radius: 9px;
-			z-index: 2;
+			display: block;
+			width: 35rem;
+			height: 35rem;
+			object-fit: cover;
+			transition: all 0.3s;
+
+			@media only screen and (max-width: 62.5em) {
+				width: 40rem;
+				height: 40rem;
+				border-radius: 50%;
+			}
 		}
 
 		& picture {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-
-		&::after,
-		&::before {
-			content: '';
-			display: block;
-			top: 50%;
-			left: 50%;
 			position: absolute;
-			transform: translate(-50%, -50%);
-			border-radius: 50%;
-			z-index: 1;
+			top: 0;
+			left: 0;
+			z-index: 3;
+
+			@media only screen and (max-width: 62.5em) {
+				position: relative;
+			}
 		}
 
-		&::before {
-			width: 107%;
-			padding-bottom: 107%;
-			background-color: #edf2ff;
+		&:hover {
+			& img {
+				transform: scale(1.15);
+				outline: 1.5rem solid #a2afe1;
+				border-radius: 6px;
+				box-shadow: 0 2rem 4rem rgb(0, 0, 0, 80%);
+
+				@media only screen and (max-width: 68.75em) {
+					transform: scale(1);
+				}
+
+				@media only screen and (max-width: 62.5em) {
+					outline: none;
+					border-radius: 50%;
+				}
+			}
+
+			transform: translate(7rem, 7rem);
+
+			@media only screen and (max-width: 68.75em) {
+				transform: translate(5rem, 7rem);
+			}
+
+			@media only screen and (max-width: 62.5em) {
+				transform: translate(0, 0);
+			}
+
+			& .about__img-border::after {
+				transform: translate(-70%, 0%);
+			}
+		}
+	}
+
+	&__img-border::after {
+		display: block;
+		content: '';
+		border: 1.5rem solid #a2afe1;
+		box-sizing: border-box;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 30rem;
+		height: 30rem;
+		transform: translate(-20%, 60%);
+		transition: all 0.3s ease 0s;
+		z-index: 1;
+
+		@media only screen and (max-width: 68.75em) {
+			width: 25rem;
+			height: 25rem;
 		}
 
-		&::after {
-			width: 92%;
-			padding-bottom: 92%;
-			background-color: #ced8fe;
+		@media only screen and (max-width: 62.5em) {
+			display: none;
 		}
 	}
 
 	&__text {
-		display: grid;
+		line-height: 1.7;
+		letter-spacing: 1.2px;
+		font-size: 1.6rem;
+		margin-bottom: 1.8rem;
 
-		grid-template-columns: 5rem 1fr;
-		align-items: center;
-		column-gap: 2.4rem;
-	}
+		&-box {
+			width: 50%;
+			font-size: 2rem;
 
-	&__text-box {
-		font-size: 2rem;
-
-		display: flex;
-		flex-direction: column;
-		align-self: center;
-
-		& p {
-			margin-bottom: 3.2rem;
-			line-height: 1.5;
-		}
-	}
-
-	&__icon {
-		width: 5.2rem;
-		height: 5.2rem;
-		color: #3b5bdb;
-		background-color: #edf2ff;
-		padding: 1.2rem;
-		border-radius: 50%;
-	}
-}
-
-@media only screen and (max-width: 53.125em) {
-	.about {
-		&__img-box {
-			& img {
-				width: 70%;
-			}
-
-			&::before {
-				width: 90%;
-				padding-bottom: 90%;
-			}
-
-			&::after {
-				width: 80%;
-				padding-bottom: 80%;
+			@media only screen and (max-width: 62.5em) {
+				width: 100%;
 			}
 		}
-	}
-}
 
-@media only screen and (max-width: 31.25em) {
-	.about {
-		&__img-box {
-			& img {
-				width: 80%;
-			}
+		&-titleBox {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 1.6rem;
 
-			&::before {
-				width: 102%;
-				padding-bottom: 102%;
+			@media only screen and (max-width: 28.125em) {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 1.2rem;
 			}
+		}
 
-			&::after {
-				width: 87%;
-				padding-bottom: 87%;
-			}
+		&-title {
+			letter-spacing: 1.2px;
+			color: #444;
+			font-weight: 700;
+		}
+
+		&-year {
+			font-size: 1.6rem;
+			font-weight: 700;
+			letter-spacing: 1.2px;
+			color: #3b5bdb;
+		}
+
+		&-skills {
+			letter-spacing: 1.2px;
+			line-height: 1.7;
+			color: #3b5bdb;
 		}
 	}
 }
