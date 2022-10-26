@@ -10,12 +10,35 @@ import youtubePageCloneMinPic from '../img/project/youtube-page-clone-min.png';
 import youtubePageCloneWebPic from '../img/project/youtube-page-clone.webp';
 import youtubeNoteMinPic from '../img/project/youtube-note-extension-min.png';
 import youtubeNoteWebPic from '../img/project/youtube-note-extension.webp';
+import BigProjectMinPic from '../img/project/BigProject-min.png';
+import BigProjectWebPic from '../img/project/BigProject.webp';
+import IrefriMinPic from '../img/project/I-refri-min.png';
+import IrefriWebPic from '../img/project/I-refri.webp';
 
 import { FiChrome, FiLayers, FiSmartphone } from 'react-icons/fi';
 
 export const projectContent = [
 	{
 		id: 'p1',
+		title: 'BigProject',
+		description:
+			'結合三大功能集結而成的多功能網站，可以訂機票及購買商品並且可以查看動態',
+		link: 'https://bigproject.vercel.app/',
+		projectWebPic: BigProjectWebPic,
+		projectMinPic: BigProjectMinPic,
+		skills: ['NextJs', 'Zustand', 'Sanity'],
+	},
+	{
+		id: 'p2',
+		title: 'I-refi',
+		description: '社群媒體網站，可以在上面分享您的冰箱內容及查看他人冰箱內容',
+		link: 'https://i-refri.vercel.app/',
+		projectWebPic: IrefriWebPic,
+		projectMinPic: IrefriMinPic,
+		skills: ['NextJs', 'Zustand', 'Sanity'],
+	},
+	{
+		id: 'p3',
 		title: 'Shoppingsite',
 		description:
 			'小型電商網站，可以上傳商品以及擁有購物車系統。使用 Express 實現RESTful API 以及使用 EJS 作為 HTML 樣板',
@@ -25,7 +48,7 @@ export const projectContent = [
 		skills: ['NodeJs', 'MongoDB', 'Bootstrap'],
 	},
 	{
-		id: 'p2',
+		id: 'p4',
 		title: 'todolist-map',
 		description:
 			'傳統 Todo list，結合 Leaflet 開源地圖，以及 Open Weather 顯示天氣，使用 Parcel 打包',
@@ -35,7 +58,7 @@ export const projectContent = [
 		skills: ['HTML', 'CSS', 'JavaScript'],
 	},
 	{
-		id: 'p3',
+		id: 'p5',
 		title: 'Real-time Taiwan weather',
 		description: '小型氣象查詢系統，可以查詢台灣各城市即時天氣資訊',
 		link: 'https://taiwan-weather-search.netlify.app/',
@@ -44,7 +67,7 @@ export const projectContent = [
 		skills: ['HTML', 'CSS', 'JavaScript'],
 	},
 	{
-		id: 'p4',
+		id: 'p6',
 		title: 'Airtshop',
 		description:
 			'使用 React、Redux 開發機票訂購網站，擁有會員系統，可使用Google 及 Facebook 登入',
@@ -54,7 +77,7 @@ export const projectContent = [
 		skills: ['React', 'Sass', 'JavaScript'],
 	},
 	{
-		id: 'p5',
+		id: 'p7',
 		title: 'Youtube landing page clone',
 		description: '使用 Sass 複製 Youtube 首頁，有 RWD 設計',
 		link: 'https://youtube-page-clone.netlify.app/',
@@ -63,7 +86,7 @@ export const projectContent = [
 		skills: ['HTML', 'Sass', 'JavaScript'],
 	},
 	{
-		id: 'p6',
+		id: 'p8',
 		title: 'Youtube-note-extension',
 		description:
 			'使用 React 搭配 Bootstrap 開發 Chrome 外掛元件，可在 Youtube 時間軸上使用文字筆記',
