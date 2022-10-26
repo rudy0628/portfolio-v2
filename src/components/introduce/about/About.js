@@ -33,7 +33,7 @@ const About = () => {
 					<div className={classes['about__text-titleBox']}>
 						<p className={classes['about__text-title']}>網頁開發歷程</p>
 						<p className={classes['about__text-year']}>
-							1 Year Web Development experience
+							1 Year Web Development Experience
 						</p>
 					</div>
 					<p className={classes['about__text']}>
@@ -59,8 +59,8 @@ const About = () => {
 						，讓我獲得了強大的開發能力，未來也會持續透過社群交流及關注技術趨勢文章，來提升自己的開發經驗與能力。
 					</p>
 					<p className={classes['about__text-skills']}>
-						HTML5 | CSS3 | Sass | JavaScript | React | NodeJs | MongoDB | Git |
-						GitHub
+						HTML5 | CSS3 | Sass | JavaScript | React | NextJs | NodeJs | MongoDB
+						| Git | GitHub
 					</p>
 				</div>
 			</div>

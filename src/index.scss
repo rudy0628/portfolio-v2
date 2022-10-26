@@ -327,6 +327,15 @@ body {
 	&--Android {
 		color: #a4c639;
 	}
+
+	&--NextJs,
+	&--Zustand {
+		color: #333;
+	}
+
+	&--Sanity {
+		color: #e43b2d;
+	}
 }
 
 .ModalOpen {
