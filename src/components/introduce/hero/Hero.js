@@ -41,6 +41,7 @@ const Hero = () => {
 							className={classes['hero__link']}
 							target="_blank"
 							rel="noreferrer"
+							aria-label="facebook"
 						>
 							<FiFacebook className={classes['hero__icon--facebook']} />
 						</a>
@@ -49,6 +50,7 @@ const Hero = () => {
 							className={classes['hero__link']}
 							target="_blank"
 							rel="noreferrer"
+							aria-label="instagram"
 						>
 							<FiInstagram className={classes['hero__icon--instagram']} />
 						</a>
@@ -57,6 +59,7 @@ const Hero = () => {
 							className={classes['hero__link']}
 							target="_blank"
 							rel="noreferrer"
+							aria-label="email"
 						>
 							<AiOutlineMail className={classes['hero__icon--mail']} />
 						</a>
@@ -65,6 +68,7 @@ const Hero = () => {
 							className={classes['hero__link']}
 							target="_blank"
 							rel="noreferrer"
+							aria-label="github"
 						>
 							<FiGithub className={classes['hero__icon--github']} />
 						</a>

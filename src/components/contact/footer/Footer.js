@@ -54,34 +54,31 @@ const Footer = () => {
 				</div>
 				<div className={classes['footer__description-box']}>
 					<p className={classes['footer__description']}>
-						這個網站是使用
+						這個網站是使用{' '}
 						<a
 							href="https://zh-hant.reactjs.org/"
 							target="_blank"
 							rel="noreferrer"
 							className={classes['footer__description--link']}
 						>
-							{' '}
-							React{' '}
-						</a>
-						製作，搭配
+							React
+						</a>{' '}
+						製作，搭配{' '}
 						<a
 							href="https://www.npmjs.com/package/react-router-dom"
 							target="_blank"
 							rel="noreferrer"
 							className={classes['footer__description--link']}
 						>
-							{' '}
-							React Router Dom{' '}
-						</a>
-						實現 SPA 頁面，如果有需要此網站原始碼，請連絡我的
+							React Router Dom
+						</a>{' '}
+						實現 SPA 頁面，如果有需要此網站原始碼，請連絡我的{' '}
 						<a
 							href="https://www.instagram.com/ya.0628/"
 							target="_blank"
 							rel="noreferrer"
 							className={classes['footer__description--link']}
 						>
-							{' '}
 							Instagram
 						</a>{' '}
 						或{' '}
@@ -91,16 +88,15 @@ const Footer = () => {
 							rel="noreferrer"
 							className={classes['footer__description--link']}
 						>
-							github{' '}
+							github
 						</a>
-						，我會公開此 APP 的權限並提供下載!查看
+						，我會公開此 APP 的權限並提供下載!查看{' '}
 						<a
 							href="https://rudy-portfolio.netlify.app/"
 							target="_blank"
 							rel="noreferrer"
 							className={classes['footer__description--link']}
 						>
-							{' '}
 							上一版本
 						</a>
 						。

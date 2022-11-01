@@ -28,11 +28,7 @@
 			height: 100%;
 			position: relative;
 
-			background: linear-gradient(
-				rgb(18, 25, 50, 0.3),
-				transparent,
-				rgb(55, 74, 150, 0.9)
-			);
+			background: rgba(255, 255, 255, 0.2);
 
 			& img {
 				opacity: 0.15;

@@ -14,6 +14,9 @@ const MainHeader = () => {
 			<button
 				onClick={() => setNavIsOpen(prevState => !prevState)}
 				htmlFor="navi-toggle"
+				aria-labelledby="navigation button"
+				aria-label="navigation button"
+				id="navigation_button"
 				className={classes['navigation__button']}
 			>
 				<span className={classes['navigation__icon']}>&nbsp;</span>

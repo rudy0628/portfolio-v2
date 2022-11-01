@@ -24,7 +24,7 @@ const Form = () => {
 	return (
 		<div className={classes['cta__text-box']}>
 			<h2 className="heading__secondary">聯絡我</h2>
-			<p className={classes['cta__text']}>如果有問題，請填寫Email</p>
+			<p className={classes['cta__text']}>如果有問題，請填寫 Email</p>
 			<form className={classes['cta__form']} name="contact" method="post">
 				<input type="hidden" name="form-name" value="contact" />
 				<Input
@@ -33,7 +33,7 @@ const Form = () => {
 					type="text"
 					placeholder="請輸入姓名或暱稱"
 					value={fullNameValue}
-					error={fullNameHasError ? 'Invalid FullName' : ''}
+					error={fullNameHasError ? '請輸入正確姓名' : ''}
 					onBlur={fullNameBlurHandler}
 					onChange={fullNameChangeHandler}
 				/>
@@ -43,7 +43,7 @@ const Form = () => {
 					title="信箱"
 					placeholder="example@example.com"
 					value={emailValue}
-					error={emailHasError ? 'Invalid Email' : ''}
+					error={emailHasError ? '請輸入正確信箱' : ''}
 					onBlur={emailBlurHandler}
 					onChange={emailChangeHandler}
 				/>
