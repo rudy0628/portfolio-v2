@@ -88,7 +88,7 @@ const Footer = () => {
 							rel="noreferrer"
 							className={classes['footer__description--link']}
 						>
-							github
+							GitHub
 						</a>
 						，我會公開此 APP 的權限並提供下載!查看{' '}
 						<a
