@@ -16,6 +16,9 @@ const DayNightBtn = props => {
 			<button
 				onClick={themeCtx.setThemeHandler}
 				className={classes['dayNight__btn']}
+				aria-labelledby="dayNight button"
+				aria-label="dayNight button"
+				id="dayNight_button"
 			>
 				{themeCtx.isDark && (
 					<BsFillSunFill className={classes['dayNight__icon']} />
