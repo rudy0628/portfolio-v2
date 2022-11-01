@@ -7,7 +7,7 @@ import 'leaflet-defaulticon-compatibility';
 const Map = () => {
 	return (
 		<MapContainer
-			center={[22.72521748685251, 120.313546207096]}
+			center={[25.039984067350442, 121.52075702074393]}
 			zoom={17}
 			className={classes.map}
 		>
@@ -16,11 +16,11 @@ const Map = () => {
 				url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 			/>
 			<Marker
-				position={[22.72521748685251, 120.313546207096]}
+				position={[25.039984067350442, 121.52075702074393]}
 				draggable={true}
 				animate={true}
 			>
-				<Popup>我的學校</Popup>
+				<Popup>台北市</Popup>
 			</Marker>
 		</MapContainer>
 	);

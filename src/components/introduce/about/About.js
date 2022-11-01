@@ -41,7 +41,7 @@ const About = () => {
 						管理資料流，串接第三方 API 獲得航班資訊，採用 Google
 						API實現實時航班地圖及第三方登入，同時也支援 Facebook
 						的第三方登入，開發前期利用 Firebase 儲存資料，後續改寫利用 Node.js
-						搭配 express 與 MongoDB 建構出完整後端 API。
+						搭配 Express 與 MongoDB 建構出完整後端 API。
 					</p>
 					<p className={classes['about__text']}>
 						在開發期間，為了實現功能，嘗試了各式各樣的第三方
@@ -55,7 +55,7 @@ const About = () => {
 						時間軸上做文字筆記的擴充元件，也成功上架了 Google Chrome store。
 					</p>
 					<p className={classes['about__text']}>
-						透過 Udemy 的網路課程、YT的技術型 Youtuber
+						透過 Udemy 的網路課程、Youtube 的技術型 Youtuber
 						，讓我獲得了強大的開發能力，未來也會持續透過社群交流及關注技術趨勢文章，來提升自己的開發經驗與能力。
 					</p>
 					<p className={classes['about__text-skills']}>
